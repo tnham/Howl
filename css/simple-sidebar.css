@@ -52,11 +52,6 @@ body{
     color: #A5B5BE;
 }
 
-#app-title{
-    display:inline-block;
-    width: 100%;
-}
-
 .menu-button {
     position: relative;
     float: right;
@@ -87,13 +82,29 @@ body{
     font-family: 'Ailerons';
 }
 
+#app-title{
+    display:inline-block;
+    width: 100%;
+    white-space: nowrap;
+}
+
 #appname {
     text-align:center;
     height: 55px;
     padding: 12px 15px;
     font-size: 34px;
     line-height: 20px;
-    color: #DFEBF2;
+    color: #DFEBF2;    
+}
+
+.backbutton{
+    float: left;
+    font-size: 25px;
+    padding: 4px 5px;
+}
+
+.hidden{
+    display: none;
 }
 
 #page-content-wrapper{
