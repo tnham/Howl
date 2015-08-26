@@ -1,0 +1,198 @@
+/*!
+ * Start Bootstrap - Simple Sidebar HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/*********Custom Style*********/
+@font-face{
+    font-family: 'Ailerons';
+    src: url('fonts/ailerons.ttf') format('truetype');
+}
+
+@font-face{
+    font-family: 'Open Sans';
+    src: url('fonts/OpenSans-Regular.ttf') format('truetype');
+}
+
+body{
+    font-family: 'Open Sans', Helvetica;
+}
+
+.sidebar-brand .searchbar input{
+    color: #303944;
+    font-size: 22px;
+    height: 50px;
+    width: 100%;
+    border-radius: 0px;
+    padding-left: 20px;
+    border: 5px solid #414f5e;
+    padding-bottom: 12px;
+}
+
+#sidebar-wrapper ul.categories li{
+    color: #A5B5BE;
+    list-style-type: none;
+}
+
+#sidebar-wrapper ul.categories a{
+    color: #A5B5BE;
+}
+
+#sidebar-wrapper ul.departments li{
+    color: #A5B5BE;
+    list-style-type: none;
+}
+
+#sidebar-wrapper ul.departments a{
+    color: #A5B5BE;
+}
+
+#sidebar-wrapper li.other a{
+    color: #A5B5BE;
+}
+
+#app-title{
+    display:inline-block;
+    width: 100%;
+}
+
+.menu-button {
+    position: relative;
+    float: right;
+    padding: 12px 10px;
+    margin-top: 8px;
+    margin-right: 5px;
+    margin-bottom: 8px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.menu-button .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background-color: #DFEBF2;
+}
+.menu-button .icon-bar + .icon-bar {
+  margin-top: 4px;
+}
+
+.navbar{
+    border-style: none;
+    border-radius: 0px;
+    background-color: #303944;
+    font-family: 'Ailerons';
+}
+
+#appname {
+    text-align:center;
+    height: 55px;
+    padding: 12px 15px;
+    font-size: 34px;
+    line-height: 20px;
+    color: #DFEBF2;
+}
+
+#page-content-wrapper{
+    margin-top: 55px;
+}
+
+/*********End Custom Style*********/
+
+/*Content below labeled changed if different from original*/
+
+/* Toggle Styles */#wrapper {
+    margin-right: 0px; /*changed*/
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+    margin-right: 250px; /*changed*/
+    margin-left: -250px; /*changed*/
+}
+
+#sidebar-wrapper {
+    font-family: 'Ailerons';  /*changed*/
+    z-index: 1000;
+    position: fixed;
+    right: 250px; /*changed*/
+    width: 0px; /*changed*/
+    height: 100%;
+    margin-right: -250px; /*changed*/
+    overflow-y: auto;
+    background: #414f5e; /*changed*/
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 250px; /*changed*/
+}
+
+#page-content-wrapper {
+    width: 100%;
+    position: relative; /*changed*/
+    padding: 15px;
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: relative; /*changed*/
+}
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 45px; /*changed*/
+    font-size: 20px; /*changed*/
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #DFEBF2; /*changed*/
+    padding-bottom: 5px;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 65px;
+    font-size: 22px;
+    line-height: 60px; /*changed*/
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #999999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}

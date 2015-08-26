@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Howl</title>
+    <link rel="shortcut icon" href="howl-icon.ico">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    </head>
+
+<body>
+
+    <div id="wrapper" >
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                        <div class = "searchbar">
+                  <input type="text" class="form-control search" placeholder="Search">                                                 </div>
+                </li>
+                <li>
+                    <a href="#">Home<span class="glyphicon glyphicon-home"></span></a>
+                </li>
+                <li>
+                    <a data-toggle="collapse" href="#department-collapse" class="department-toggle" aria-controls="department-collapse" aria-controls="department-collapse">Departments<span class="glyphicon glyphicon-chevron-down"></span></a>
+                <div class="collapse" id="department-collapse"><ul class="departments">
+                        <li><a href="#">Computer Science</a></li>
+                        <li><a href="#">Cognitive Science</a></li>
+                        <li><a href="#">All Departments</a></li>
+                    </ul>
+                </div>
+                </li>
+                <li>
+                    <a data-toggle="collapse" href="#category-collapse" class="category-toggle" aria-controls="category-collapse" aria-controls="category-collapse">Categories<span class="glyphicon glyphicon-chevron-down"></span></a>
+                    <div class="collapse" id="category-collapse"><ul class="categories">
+                        <li><a href="#">Competitions</a></li>
+                        <li><a href="#">Networking</a></li>
+                        <li><a href="#">Organizations</a></li>
+                        <li><a href="#">Workshops</a></li>
+                        <li><a href="#">Classes</a></li>
+                    </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">About/Contact Us</a>
+                </li>
+                <li>
+                    <a href="#">Profile</a>
+                </li>
+                <li class="other">
+                    <a href="#">Sign In</a>
+                </li>
+                
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Fixed Header -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+        <div id="app-title">
+            <a href="#menu-toggle" class="menu-button" id="menu-toggle">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </a>
+            <div id="appname">
+                Howl
+            </div>
+        </div>
+    </div>
+    </nav>
+        <!-- /#Fixed Header -->
+        
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p>Content will be here. info about CSS tags <a href="http://getbootstrap.com/css/">here</a></p>
+                        <p>Keep all page content within the <code>#page-content-wrapper</code>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+</body>
+
+</html>
